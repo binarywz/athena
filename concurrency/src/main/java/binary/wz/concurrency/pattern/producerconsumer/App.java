@@ -1,6 +1,4 @@
-package binary.wz.pattern.producerconsumer;
-
-import java.util.concurrent.TimeUnit;
+package binary.wz.concurrency.pattern.producerconsumer;
 
 /**
  * @author binarywz

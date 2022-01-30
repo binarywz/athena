@@ -1,4 +1,4 @@
-package binary.wz.pattern.guardedsuspension;
+package binary.wz.concurrency.pattern.guardedsuspension;
 
 import java.util.Map;
 import java.util.Set;

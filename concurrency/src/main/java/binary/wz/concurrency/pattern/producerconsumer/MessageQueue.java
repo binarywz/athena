@@ -1,4 +1,4 @@
-package binary.wz.pattern.producerconsumer;
+package binary.wz.concurrency.pattern.producerconsumer;
 
 import lombok.extern.slf4j.Slf4j;
 
