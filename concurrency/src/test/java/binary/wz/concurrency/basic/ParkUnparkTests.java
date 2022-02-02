@@ -1,17 +1,19 @@
 package binary.wz.concurrency.basic;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 import java.util.concurrent.locks.LockSupport;
 
 /**
  * @author binarywz
- * @date 2022/1/30 16:21
+ * @date 2022/2/2 17:21
  * @description:
  */
 @Slf4j
-public class ParkUnpark {
-    public static void main(String[] args) {
+public class ParkUnparkTests {
+    @Test
+    public void ParkUnparkBasic() {
         Thread t1 = new Thread(() -> {
             log.debug("start...");
             try {

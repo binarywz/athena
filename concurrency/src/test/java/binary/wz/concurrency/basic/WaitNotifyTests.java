@@ -2,16 +2,19 @@ package binary.wz.concurrency.basic;
 
 import binary.wz.concurrency.util.Sleeper;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author binarywz
- * @date 2022/1/30 17:20
+ * @date 2022/2/2 17:19
  * @description:
  */
 @Slf4j
-public class WaitNotifyStatus {
-    final static Object LOCK = new Object();
-    public static void main(String[] args) {
+public class WaitNotifyTests {
+    private final Object LOCK = new Object();
+
+    @Test
+    public void WaitNotifyStatusTest() {
         new Thread(() -> {
             synchronized (LOCK) {
                 log.debug("执行....");
