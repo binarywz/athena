@@ -1,4 +1,4 @@
-package binary.wz.concurrency.binary.wz.concurrency.basic;
+package binary.wz.concurrency.basic.reentrantlock;
 
 import lombok.extern.slf4j.Slf4j;
 
