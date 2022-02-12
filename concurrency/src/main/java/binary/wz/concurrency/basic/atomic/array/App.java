@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 /**
  * @author binarywz
  * @date 2022/2/11 23:02
- * @description:
+ * @description: 原子数组
  */
 public class App {
 

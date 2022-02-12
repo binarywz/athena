@@ -7,13 +7,14 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 /**
  * @author binarywz
  * @date 2022/2/12 9:57
- * @description:
+ * @description: 原子字段更新器
  */
 @Slf4j
 public class App {
     public static void main(String[] args) {
         Student student = new Student();
 
+        // 必须为volatile修饰的字段
         AtomicReferenceFieldUpdater updater =
                 AtomicReferenceFieldUpdater.newUpdater(Student.class, String.class, "name");
 
@@ -23,6 +24,7 @@ public class App {
 }
 
 class Student {
+
     volatile String name;
 
     @Override

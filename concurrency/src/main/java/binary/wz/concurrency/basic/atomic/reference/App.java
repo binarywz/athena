@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicStampedReference;
 /**
  * @author binarywz
  * @date 2022/2/11 22:01
- * @description:
+ * @description: 原子引用
  */
 @Slf4j
 public class App {
