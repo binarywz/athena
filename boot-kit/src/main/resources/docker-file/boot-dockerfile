@@ -1,0 +1,6 @@
+FROM java:8
+MAINTAINER binarywz <binarywz@163.com>
+
+ADD ../../target/boot-docker-2.3.5.RELEASE.jar app.jar
+
+CMD java -jar app.jar
