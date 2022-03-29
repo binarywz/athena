@@ -13,6 +13,7 @@
         <module>boot-kit</module>
         <module>basic-protobuf</module>
         <module>basic-demo</module>
+        <module>basic-netty</module>
     </modules>
 
     <properties>
