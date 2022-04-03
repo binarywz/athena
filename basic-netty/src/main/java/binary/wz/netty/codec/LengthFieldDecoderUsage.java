@@ -1,4 +1,4 @@
-package binary.wz.netty.usage009;
+package binary.wz.netty.codec;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
