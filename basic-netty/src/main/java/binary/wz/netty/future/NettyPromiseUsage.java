@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * @author binarywz
  * @date 2022/4/3 19:09
- * @description:
+ * @description: Promise就是在两个线程间传递数据的对象
  */
 @Slf4j
 public class NettyPromiseUsage {

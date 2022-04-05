@@ -1,6 +1,7 @@
 package binary.wz.netty.usage.client;
 
 import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -24,11 +25,14 @@ public class NettyClient {
         bootstrap.group(workerGroup)
                 .channel(NioSocketChannel.class)
                 .option(ChannelOption.AUTO_READ, true)
+                .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 1000)
                 .handler(new ClientChannelInitializer());
         try {
-            ChannelFuture future = bootstrap.connect(address, port).sync();
+            // 此处为方便调试写成这样
+            ChannelFuture future = bootstrap.connect(address, port);
+            Channel channel = future.sync().channel();
             System.out.println("netty client start...");
-            future.channel().closeFuture().sync();
+            channel.closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
